@@ -11,14 +11,16 @@
     <!-- Define your beans here -->
     
     <!-- define the dependency -->
-    
+    <bean id="myFortune"
+           class="com.springDemo.HappyFortuneService">
+           </bean>
     
  	<bean id="myCoach"
  		class="com.springDemo.TrackCouch">	 		
- 	</bean>
 
+    <constructor-arg ref="myFortune"/>
     
-
+    </bean>
 </beans>
 
 
