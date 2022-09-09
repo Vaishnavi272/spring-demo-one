@@ -26,6 +26,9 @@
             class="com.springDemo.CricketCoach">
             
             <property name="fortuneService" ref="myFortuneService" />
+            <property name="emailAddress" value="vaishnavinamdev1@gmail.com"/>
+            <property name="team" value="sunrise"/>
+            
        </bean>
 </beans>
 
