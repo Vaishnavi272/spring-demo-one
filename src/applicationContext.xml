@@ -16,20 +16,22 @@
            </bean>
     
  	<bean id="myCoach"
- 		class="com.springDemo.TrackCouch">	 		
+ 		class="com.springDemo.TrackCouch"
+ 		init-method="doMyStartupStuff"
+ 		destroy-method="doMyStartupYoYo">	 		
 
     <constructor-arg ref="myFortuneService"/>
     
-    </bean>
+   </bean>
     
-    <bean id="myCricketCoach"
-            class="com.springDemo.CricketCoach">
+  <!--   <bean id="myCricketCoach"
+          class="com.springDemo.CricketCoach">
             
-            <property name="fortuneService" ref="myFortuneService" />
-            <property name="emailAddress" value="vaishnavinamdev1@gmail.com"/>
+         <property name="fortuneService" ref="myFortuneService" />
+           <property name="emailAddress" value="vaishnavinamdev1@gmail.com"/>
             <property name="team" value="sunrise"/>
             
-       </bean>
+       </bean>  -->
 </beans>
 
 

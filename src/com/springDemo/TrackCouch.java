@@ -21,4 +21,15 @@ public class TrackCouch implements Coach {
 		return fortuneService.getFortune();
 	}
 
+	
+	
+	// add init method 
+	public void doMyStartupStuff() {
+		System.out.println("TrackCoach: this is init method");
+	}
+	// destory method
+	
+	public void doMyStartupYoYo() {
+		System.out.println("TrackCoach: this is destory method");
+	}
 }
